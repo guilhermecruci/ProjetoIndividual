@@ -1,19 +1,28 @@
+*{
+
+}
+
+body{
+	background-image: url(./imagens/fundo.png);
+}
+
+header{
+	width: 80%;
+	height: 200px;
+	margin: 1% 10%;
+	display: flex;
+}
+
 nav{
 	display: flex;
-	justify-content: space-evenly;
-    align-items: center;
+
 	width: 100%;
 	font-size: 12px;
     height: 100%;
 }
 
-img{
-    width: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-body{
-    background-image: url(./imagens/provavel\ fundo.jpg);
+.logoDemolay{
+	width: 200px;
+	height: 65px;
 }
