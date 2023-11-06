@@ -8,10 +8,25 @@ body {
 	background-color: #000;
 }
 
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+    opacity: 0%;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(61, 61, 61);
+    border-radius: 25px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
 header {
 	width: 80%;
 	height: 200px;
-	margin: 1% 10%;
+	margin: 3% 10%;
 	display: flex;
 
 }
@@ -25,8 +40,8 @@ nav {
 
 
 .logoDemolay {
-	width: 200px;
-	height: 65px;
+	width: 90px;
+	height: 90px;
 }
 
 .navbar {
@@ -57,22 +72,30 @@ nav {
 	text-decoration: none;
 	font-size: 20px;
 	color: #FFF;
+	transition: all 0.2s linear;
+}
+
+.open:hover {
+	background-color: #FFF;
+	color: #000;
+	transition: all 0.2s linear;
 }
 
 .letreiro {
 	color: #FFF;
 	display: flex;
-	font-size: 64px;
-	font-family: "Poppins";
+	font-size: 74px;
+	font-family: "DM Serif Text";
 	font-weight: 900;
 	display: flex;
+	margin: 0% 10%;
 }
 
-.img_letreiro {
+/* .img_letreiro {
 	height: 80px;
 	display: flex;
 	align-items: end;
-}
+} */
 
 .enquadramento_letreiro {
 	width: 80%;
@@ -116,4 +139,10 @@ nav {
 .supremo {
 	width: 400px;
 	margin: 25% 5%;
+}
+
+.section_virtudes {
+	width: 80%;
+	margin: 2% 10%;
+	background-color: #000;
 }
