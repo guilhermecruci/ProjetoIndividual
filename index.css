@@ -1,5 +1,6 @@
 * {
 	font-family: "Fjalla One";
+	scroll-behavior: smooth;
 }
 
 body {
@@ -23,6 +24,11 @@ body::-webkit-scrollbar-thumb {
 	border: 3px solid rgb(0, 0, 0);
 }
 
+::selection {
+	background-color: #fff;
+	color: #000;
+}
+
 header {
 	width: 80%;
 	height: 200px;
@@ -38,10 +44,9 @@ nav {
 	height: 100%;
 }
 
-
 .logoDemolay {
-	width: 90px;
-	height: 90px;
+	width: 200px;
+	height: 70px;
 }
 
 .navbar {
@@ -91,24 +96,25 @@ nav {
 	margin: 0% 10%;
 }
 
-/* .img_letreiro {
-	height: 80px;
-	display: flex;
-	align-items: end;
-} */
-
 .enquadramento_letreiro {
 	width: 80%;
 	margin: 6% 10% 15%;
 	height: 280px;
 	display: flex;
-	align-items: end;
+	align-items: start;
+	flex-direction: column;
+}
+
+.img_letreiro {
+	width: 80px;
+	height: 80px;
+	display: flex;
 }
 
 .history {
 	background-color: #000;
 	width: 80%;
-	height: 800px;
+	height: 1080px;
 	color: #FFF;
 	margin: 0 10%;
 	display: flex;
@@ -145,11 +151,22 @@ nav {
 	width: 80%;
 	margin: 2% 10%;
 	background-color: #000;
+	display: flex;
 }
 
 .barra {
-	width: 1px;
-	height: 250px;
-	background-color: white;
-	margin: 0% 3% 0% 5%;
+	width: 2px;
+	background-color: #FFF;
+	color: #FFF;
+	height: 800px;
+}
+
+.chamas {
+	color: #FFF;
+}
+
+.virtude {
+	color: #FFF;
+	font-size: 50px;
+
 }
