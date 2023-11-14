@@ -90,7 +90,7 @@ nav {
 	color: #FFF;
 	display: flex;
 	font-size: 74px;
-	font-family: "Bona Nova";
+	font-family: "Milonga";
 	font-weight: 900;
 	display: flex;
 	margin: 0% 10%;
@@ -114,7 +114,7 @@ nav {
 .history {
 	background-color: #000;
 	width: 80%;
-	height: 1080px;
+	height: 920px;
 	color: #FFF;
 	margin: 0 10%;
 	display: flex;
@@ -126,9 +126,13 @@ nav {
 	text-align: center;
 	width: 100%;
 	height: 50px;
-	margin: 20% 0% 5% 0%;
-	font-family: "DM Serif Text";
+	margin: 8% 0% 5% 0%;
+	font-family: "Milonga";
 	font-size: 50px;
+	color: #FFF;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
 }
 
 .text {
@@ -148,25 +152,78 @@ nav {
 }
 
 .section_virtudes {
-	width: 80%;
-	margin: 2% 10%;
 	background-color: #000;
+	width: 80%;
+	height: 1080px;
+	color: #FFF;
+	margin: 0 10%;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+}
+
+.div_enquadramento {
+	width: 100%;
+	height: 720px;
+	margin: 0% 5%;
 	display: flex;
 }
 
-.barra {
-	width: 2px;
-	background-color: #FFF;
+.asVirtudes {
+	width: 50%;
+	height: 100px;
 	color: #FFF;
-	height: 800px;
+	font-size: 25px;
+	font-family: "Milonga";
+	display: flex;
+	align-items: center;
+	text-align: start;
 }
 
-.chamas {
-	color: #FFF;
+.class_conteudo {
+	display: flex;
+	width: 60%;
+	height: 80px;
+	font-size: 15px;
+	font-family: "Poppins";
+	text-align: start;
 }
 
-.virtude {
-	color: #FFF;
-	font-size: 50px;
+.virtudes_restantes {
+	display: flex;
+	width: 90%;
+	height: 720px;
+	flex-direction: column;
 
+}
+
+.enquadramento1 {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.section_carrosel {
+width: 80%;
+height: 500px;
+background-color: #000;
+display: flex;
+margin: 2% 10%;
+
+}
+
+.div_carrosel {
+	width: 90%;
+	height: 100%;
+	display: flex;
+	scale: 1;
+transition: all 0.3s step-start;
+border: 1px #fff;
+}
+
+
+
+.div_carrosel:hover {
+scale: 1.2;
 }
