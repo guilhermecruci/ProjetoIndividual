@@ -4,7 +4,7 @@
 }
 
 body {
-	background-image: url(./imagens/fundo.png);
+	background-image: url(../imagens/fundo.png);
 	background-repeat: no-repeat;
 	background-color: #000;
 	overflow-x:hidden;
@@ -210,61 +210,55 @@ nav {
 	height: 800px;
 	background-color: #000;
 	display: flex;
-	margin: 2% 0%;
+	margin: 2% 5%;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 }
 
-.carrosel {
-	display: flex;
-	width: 100%;
-	height: 80%;
-	justify-content: center;
-}
-
 .div_chamada {
 	color: #FFF;
 	width: 100%;
-	height: 200px;
+	height: 150px;
 	display: flex;
-	
+	font-size: 50px;
+	justify-content: center;
+	text-align: center;
+	font-family: "Milonga";
 }
 
-.div_carrosel {
-	width: 15%;
-	height: auto;
+.carrosel {
 	display: flex;
-	scale: 1;
-	transition: all 0.3s linear;
-	/* margin: 0px 25px; */
-	padding:0 2px;
-}
-
-
-
-.div_carrosel:hover {
-	scale: 1.2;
-	transition: all 0.3s linear;
-	z-index: 1;
-	margin-right: 70px;
+	width: 100%;
+	height: 800px;
+	justify-content: center;
+	margin: 0% 10%
 }
 
 .img_carrosel {
-	border-radius: 30px;
-	transition: all 0.3s linear;
+	width: 500px;
+	height: 600px;
+	margin: 0% 1.5%;
 }
 
-.img_carrosel:hover {
-	transition: all 0.3s linear;
+#imagem_out {
+	/* display: none; */
+
+}
+
+.foto {
+	width: 30%;
+	display: flex;
+	justify-content: space-evenly;
 }
 
 .fim {
-	background-color: #000;
+	background-color: #040404;
 	display: flex;
-	width: 80%;
-	margin: 5% 10%;
-	height: 500px;
+	width: 100%;
+	margin: 5% 0% 0% 0%;
+	height: 250px;
+	padding: 0%;
 }
 
 .img_footer {
@@ -281,3 +275,4 @@ nav {
 	justify-content: end;
 	font-size: 40px;
 }
+

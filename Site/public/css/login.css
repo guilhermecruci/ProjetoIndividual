@@ -1,0 +1,54 @@
+* {}
+
+body {
+    background-color: black;
+    background-image: url(../imagens/fundo\ login.png);
+    background-repeat: no-repeat;
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+    opacity: 0%;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(61, 61, 61);
+    border-radius: 25px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+::selection {
+    background-color: #fff;
+    color: #000;
+}
+
+.navbar {
+    width: 80%;
+    margin: 2% 10%;
+}
+
+.logo_nav {
+    width: 90px;
+    height: 100%;
+    display: flex;
+}
+
+.logo {
+    width: 220px;
+    height: 80px;
+}
+
+.div_login {
+    width: 100%;
+    height: 500px;
+}
+
+.enquadramento_login {
+    border-radius: 45px;
+    opacity: 0.5;
+    background: rgba(217, 217, 217, 0.25);
+}
