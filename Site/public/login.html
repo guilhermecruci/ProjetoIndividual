@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Área de login</title>
     <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./js/index.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="./imagens/LogoDemolay.png">
@@ -21,16 +23,34 @@ family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo_nav">
-                <img src="./imagens/logo demolay navbar branco.png" class="logo">
-            </div>
+        <nav>
+            <img src="./imagens/logo demolay navbar branco.png" class="img_navbar">
         </nav>
     </header>
-    <div class="div_login">
-        <div class="enquadramento_login">
-
+    <div class="container">
+        <div class="div_body">
+            <div class="txt_login">
+<span>Login</span>
+            </div>
+            <div class="dados">
+                <input id="input_email"> <br>
+            </div>
+            <div class="dados">
+                <input id="input_senha"> <br>
+            </div>
+            <div class="button_login">
+                <button onclick="login()"> <br>
+                    Login
+                </button>
+            </div>
+            <div class="for_register">
+                <span>Se você não tem uma conta</span>
+                <span>Criar conta</span>
+            </div>
+        </div>
+        <div class="div_body">
+            <img src="./imagens/I do so.jpg" class="logoDemolay">
         </div>
     </div>
 </body>
-</html>'1'
+</html>
