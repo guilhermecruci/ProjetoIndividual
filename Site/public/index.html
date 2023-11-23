@@ -151,11 +151,21 @@ family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
         </div>
         </div>
         <div class="carrosel">
-            <img src="./imagens/apresentacao em loja.jpg" class="img_carrosel" id="imagem_1">
-            <img src="./imagens/eu e eu.jpg" class="img_carrosel" id="imagem_2">
-            <img src="./imagens/posse.jpg" class="img_carrosel" id="imagem_3">
-            <!-- <img src="./imagens/gasp.jpg" class="img_carrosel" id="imagem_4"> -->
-            <img src="./imagens/posse.jpg" class="img_carrosel" id="imagem_out">
+            <button class="arrow-left control" aria-label="Previous image">
+                ❰
+            </button>
+            <button class="arrow-right control" aria-label="Next image">
+                ❱
+            </button>
+            <div class="gallery-wrapper">
+                <div class="gallery">
+                    <img src="./imagens/gasp.jpg" class="item" id="imagem_in">
+                    <img src="./imagens/apresentacao em loja.jpg" class="item current-item" id="imagem_1">
+                    <img src="./imagens/eu e eu.jpg" class="item" id="imagem_2">
+                    <img src="./imagens/posse.jpg" class="item" id="imagem_3">
+                    <img src="./imagens/posse.jpg" class="item" id="imagem_out">
+                </div>
+            </div>
         </div>
     </section>
     <footer>
@@ -172,4 +182,5 @@ family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
         </div>
     </footer>
 </body>
+
 </html>

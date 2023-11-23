@@ -1,4 +1,9 @@
-if (grafico.data.labels.length == 10 && grafico.data.datasets[0].data.length == 10) {
-    grafico.data.labels.shift();
-    grafico.data.datasets[0].data.shift();
-}
+const controls = document.querySelectorAll('.control');
+let currentItem = 0;
+const items = document.querySelectorAll('.item');
+const maxItems = items.length;
+controls.forEach(control => {
+    control.addEventListener('click', () => {
+        console.log('control clicked');
+    })
+});
