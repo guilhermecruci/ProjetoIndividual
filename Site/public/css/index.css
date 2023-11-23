@@ -243,6 +243,7 @@ nav {
 	height: 600px;
 	margin: 0% 1.5%;
 	flex-shrink: 0;
+	border-radius: 20px;
 }
 
 .container {

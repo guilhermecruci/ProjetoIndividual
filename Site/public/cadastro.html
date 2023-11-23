@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Área de login</title>
-    <link rel="stylesheet" href="./css/login.css">
+    <title>Área de Cadstro</title>
+    <link rel="stylesheet" href="./css/cadastro.css">
     <link rel="stylesheet" href="./js/index.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,32 +23,39 @@ family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="./index.html"><img src="./imagens/logo demolay navbar branco.png" class="img_navbar"></a>
-        </nav>
-    </header>
     <div class="container">
         <div class="div_body">
             <div class="txt_login">
-                <span>Login</span>
+                <span>Cadastre-se</span>
+            </div>
+            <div class="dados nome">
+                <input id="input_nome" placeholder="Nome Completo"> <br>
             </div>
             <div class="dados email">
-                <input id="input email" placeholder="E-mail"> <br>
+                <input id="input_email" placeholder="E-mail"> <br>
+            </div>
+            <div class="dados confirmaEmail">
+                <input id="input_confirmaEmail" placeholder="Confirme seu E-mail"> <br>
+            </div>
+            <div class="dados cpf">
+                <input id="input_cpf" placeholder="CPF"> <br>
             </div>
             <div class="dados senha">
-                <input id="input senha" placeholder="Senha" type="password"> <br>
+                <input id="input_senha" placeholder="Senha"> <br>
+            </div>
+            <div class="dados confirmaSenha">
+                <input id="input_confirmaSenha" placeholder="Confirme sua Senha"> <br>
             </div>
             <div class="button_login">
-                <a href="" class="button_login2">Login</a>
+                <a href="./login.html" class="button_login2">Continue</a>
             </div>
             <div class="for_register">
-                <span>Se você não tem uma conta?</span>
-                <a class="create_now" href="./cadastro.html">Crie conta</a>
+                <span>Já tem uma conta?</span>
+                <a class="create_now" href="./login.html">Faça o Login</a>
             </div>
         </div>
         <div class="div_body">
-            <img src="./imagens/I do so.jpg" class="logoDemolay" width="665px">
+            <img src="./imagens/Branco + Gold.png" class="logoDemolay" width="665px">
         </div>
     </div>
 </body>
