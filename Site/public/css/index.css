@@ -4,13 +4,14 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	color: #FFF;
 }
 
 body {
 	background-image: url(../imagens/fundo.png);
 	background-repeat: no-repeat;
 	background-color: #000;
-	overflow-x:hidden;
+	overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -113,6 +114,12 @@ nav {
 	width: 80px;
 	height: 80px;
 	display: flex;
+	transition: 1s;
+	margin-left: 20px;
+}
+
+.img_letreiro:hover {
+	transform: scale(1.1);
 }
 
 .history {
@@ -182,6 +189,7 @@ nav {
 	display: flex;
 	align-items: center;
 	text-align: start;
+
 }
 
 .class_conteudo {
@@ -270,6 +278,18 @@ nav {
 	display: flex;
 	flex-flow: row nowrap;
 	gap: 15px;
+	animation: carrousel 20s linear infinite;
+}
+
+@keyframes carrousel {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-2828.9px);
+
+	}
 }
 
 .arrow-left,
@@ -295,7 +315,7 @@ nav {
 	background: linear-gradient(to right, transparent 0%, black 200%);
 }
 
-.arrow-left:hover, 
+.arrow-left:hover,
 .arrow-right:hover {
 	opacity: 1;
 
@@ -320,22 +340,13 @@ nav {
 	display: flex;
 	width: 250px;
 	height: 250px;
-}
-
-.txt_footer {
-	color: #FFF;
-	display: flex;
-	width: 50%;
-	height: 50px;
-	justify-content: end;
-	font-size: 40px;
-	margin-left: 35%;
+	margin-left: 50%;
 }
 
 footer {
-	width: 80%;
+	width: 70%;
 	height: 300px;
-	margin: 5% 10%;
+	margin: 0% 15%;
 	background-color: #000;
 	display: flex;
 	flex-direction: column;
@@ -343,7 +354,30 @@ footer {
 
 .footerr {
 	flex-direction: row;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
 }
+
+.contate {
+	display: flex;
+	justify-content: center;
+    align-items: start;
+	width: 30%;
+	height: 50px;
+	font-size: 40px;
+	font-family: "Milonga";
+	flex-direction: column;
+}
+
+.redes {
+	width: 60%;
+	font-size: 20px;
+	font-family: "Milonga";
+	line-height: 35px;
+}
+
 .copyright {
 	display: flex;
 	justify-content: center;
