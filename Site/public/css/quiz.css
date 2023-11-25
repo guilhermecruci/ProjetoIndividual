@@ -22,6 +22,7 @@ body {
     display: flex;
     justify-content: flex-end;
     padding: 5px;
+    font-family: "Poppins";
 }
 
 .header .botao_voltar button {
@@ -32,11 +33,13 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #000000;
+    font-family: "Poppins";
 }
 
 .header .botao_voltar button a {
     text-decoration: none;
     color: #ffffff;
+    font-family: "Poppins";
 }
 
 .container_personalizado {
@@ -47,6 +50,7 @@ body {
     border-radius: 10px;
     animation: fadeInRight 1s ease;
     color: rgb(0, 0, 0);
+    font-family: "Milonga";
 }
 
 /* .container_racas {

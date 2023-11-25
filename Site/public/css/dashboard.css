@@ -7,7 +7,9 @@
     }
 
     body {
-        background-color: black;
+        background-image: url(../imagens/fundo\ Dash.png);
+        background-repeat: no-repeat;
+        background-position: cover;
     }
 
     .menu {
