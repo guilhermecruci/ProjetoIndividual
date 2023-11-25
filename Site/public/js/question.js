@@ -13,7 +13,6 @@ var container = document.querySelector(".container")
 var limite_de_questoes = 10;
 var contador_questoes = 0;
 var questao_atual;
-// var dificuldade; 
 var questoes_disponiveis = [];
 var opcoes_disponiveis = [];
 var respostas_corretas = 0;
@@ -207,6 +206,7 @@ function iniciar_quiz() {
 }
 
 function ver_dash() {
+    window.location.href = "./dashboard.html"
 }
 
 function desaparecer_pref() {
