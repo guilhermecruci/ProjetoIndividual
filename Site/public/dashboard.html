@@ -33,10 +33,10 @@ family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
                 <span id="span_nome">Fulano</span>
             </div>
             <div class="div_menu cargo">
-                <span>Seu cargo atual é:</span>
+                <span id="span_cargo">Ativo</span>
             </div>
             <div class="div_menu cargo">
-                <span id="span_cargo">Iniciático</span>
+                <input type="checkbox" id="checkbox_paramento" onclick="atualizarSituacao()">
             </div>
             <div class="quiz">
                 <a href="./quiz.html">Quiz</a>
@@ -48,38 +48,21 @@ family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
     </div>
     <div class="div_dash">
         <div class="grafico um">
-            <p class="tag"> Resposta média</p>
+            <p class="tag"> Idade média</p>
             <canvas id="grafico_linha" width="98%" height="60%"></canvas>
         </div>
         <div class="grafico dois">
-            <p class="tag">Acertos x Erros</p>
-            <canvas id="grafico_donut" width="80%" height="100%"></canvas>
+            <p class="tag">Situação</p>
+            <canvas id="grafico_linha2" width="98%" height="60%"></canvas>
         </div>
     </div>
 </body>
 
 </html>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    const ctx = document.getElementById('grafico_linha');
-
-    new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9','10'],
-            datasets: [{
-                label: 'Acertos',
-                data: [10, 9, 3, 5, 2, 3, 5, 7, 8, 9],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        }
-    });
+<script>    
     span_nome.innerHTML = window.localStorage.getItem('NOME_USUARIO');
 </script>
+
+<script src="./js/grafico.js"></script>
+<script src="./js/situacao.js"></script>

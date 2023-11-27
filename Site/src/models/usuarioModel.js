@@ -10,19 +10,40 @@ function autenticar(email, senha) {
 }
 
 // Coloque os mesmos parâmetros aqui. Vá para a var instrucao
-function cadastrar(nome, email, senha, cpf) {
+function cadastrar(nome, email, senha, idade) {
     console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function cadastrar():", nome, email, senha);
     
     // Insira exatamente a query do banco aqui, lembrando da nomenclatura exata nos valores
     //  e na ordem de inserção dos dados.
     var instrucao = `
-        INSERT INTO usuario (nome, email, senha, cpf) VALUES ('${nome}', '${email}', '${senha}', '${cpf}');
+        INSERT INTO usuario (nome, email, senha, fkIdade, fkSituacao) VALUES ('${nome}', '${email}', '${senha}', '${idade}', 1003);
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
 }
 
+function buscarIdade() {
+    const sql = `SELECT fkIdade from usuario`;
+    console.log(database.executar(sql));
+    return database.executar(sql);
+}
+
+function buscarSituacao(usuario) {
+    const sql = `SELECT fkSituacao from usuario where nome = '${usuario}'`;
+    console.log(database.executar(sql));
+    return database.executar(sql);
+}
+
+function atualizarSituacao(situacao, usuario) {
+    const sql = `UPDATE usuario SET fkSituacao = ${situacao} where nome = '${usuario}'`;
+    console.log(database.executar(sql));
+    return database.executar(sql);
+}
+
 module.exports = {
     autenticar,
-    cadastrar
+    cadastrar,
+    buscarIdade,
+    buscarSituacao,
+    atualizarSituacao
 };

@@ -44,19 +44,19 @@ var quiz = [
     },
 
     {
-        q: 'Quem foi o Louis Gordon Lower?',
+        q: '8 - Quem foi o Louis Gordon Lower?',
         opcoes: ['Um maçom', 'Um cavaleiro templário', 'Um ativista político ', 'O primeiro Demolay'],
         resposta: 3
     },
 
     {
-        q: 'Quando foi realizado a prisão de Jacques Demolay?',
+        q: '9 - Quando foi realizado a prisão de Jacques Demolay?',
         opcoes: ['11 de julho de 1236', '13 de outubro de 1307', '13 de agosto de 1344', '12 de setembro de 1300'],
         resposta: 1
     },
 
     {
-        q: 'Qual o dia do Demolay no Brasil? ',
+        q: '10 - Qual o dia do Demolay no Brasil? ',
         opcoes: ['15 de Abril', '12 de Agosto', '18 de Março', '25 de Novembro'],
         resposta: 2
     }
